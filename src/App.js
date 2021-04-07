@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Header from './Header';
 export default class App extends Component{
   constructor(props){
     super(props);
@@ -20,6 +21,7 @@ export default class App extends Component{
       <div className="container text-center pt-5">
         <button className="btn btn-primary" onClick={this.countUp}>Count UP + </button>
         <h1 className="mt-3">{this.state.counter}</h1>
+        <Header header='Hi Mina'/>
       </div>   
     )};
 }
