@@ -5,10 +5,15 @@ export default class App extends Component{
     this.state={
       counter:0
     };
-    
+    /*Solve */
+   //Method 1 
+    this.countUp=this.countUp.bind(this);//bind==>Change Context (Countup Calling in Another Context)[without bind this==>undefined]
+   //Method 2
+   //using countup=()=>{} arrow Function
   }
   countUp(){
-    this.setState({counter:++this.state.counter});
+    console.log(this);
+    this.setState({counter:++this.state.counter});//
   };
   render(){
     return(
