@@ -7,7 +7,7 @@ export default class App extends Component{
     };
     
   }
-  countUp=()=>{
+  countUp(){
     this.setState({counter:++this.state.counter});
   };
   render(){
