@@ -18,7 +18,15 @@ import Header from './Header';
   
   */
 function App(){
-  const [counter,setCounter]=useState(0);//0==>intial Value
+  const [counter,setCounter]=useState(0);//0==>intial Value 
+  //Why Const==> In order not to be able to define a variable with the same name
+  /*
+      Destructing 
+       var [first, second, third] = ["Laide", "Gabriel", "Jets"]; ==>var first = "laide",second = "Gabriel",third = "Jets";
+       //const counter=useState(0)[0]
+       //const setCounter=useState()[1]
+  */
+ 
     function countUp(){
       setCounter(counter+1);
     };
