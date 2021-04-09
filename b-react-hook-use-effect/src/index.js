@@ -5,8 +5,8 @@ import'../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import AppClass from './App-Class';
 ReactDOM.render(
   <React.StrictMode>
-    {/* <App />*/}
-    <AppClass />
+     <App />
+    {/* <AppClass />*/}
   </React.StrictMode>,
   document.getElementById('root')
 );

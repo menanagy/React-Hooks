@@ -37,15 +37,21 @@ function App(){
     }
     useEffect(()=>{
       document.title=title;
+      return(
+        setTimeout(()=>{
+          console.log('Clean UP');
+          setTitle('');
+        },500)
+      )
     },[title])
     useEffect(()=>{
-      document.title=`You have clicked ${this.state.counter} Times `;
+      document.title=`You have clicked ${counter} Times `;
     },[counter])
     
       return(
         <div className="container text-center pt-5">
           <button className="btn btn-primary mx-3" onClick={countUp}>Count UP + </button>
-          <button className="btn btn-primary mx-3" onClick={handle_Title}>ChangeTitle </button>
+          <button className="btn btn-primary mx-3" onClick={handle_Title}>ChangeTitle</button>
           <h1 className="mt-3">{counter}</h1>
           <Header header='Hi Mina'/>
         </div>   
