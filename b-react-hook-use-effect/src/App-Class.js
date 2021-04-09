@@ -48,7 +48,6 @@ export default class AppClass extends Component{
         <button className="btn btn-primary mx-3" onClick={this.countUp}>Count UP + </button>
         <button className="btn btn-primary mx-3" onClick={this.handle_Title}>Change Title</button>
         <h1 className="mt-3">{this.state.counter}</h1>
-        <Header header='Hi Mina'/>
       </div>   
     )};
 }
